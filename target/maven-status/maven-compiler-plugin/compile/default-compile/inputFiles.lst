@@ -1,4 +1,11 @@
-/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Back end -ohjelmointi/Bookstore/bookstore/src/main/java/bookstore/bookstore/BookstoreApplication.java
-/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Back end -ohjelmointi/Bookstore/bookstore/src/main/java/bookstore/bookstore/model/Book.java
-/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Back end -ohjelmointi/Bookstore/bookstore/src/main/java/bookstore/bookstore/model/BookRepository.java
-/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Back end -ohjelmointi/Bookstore/bookstore/src/main/java/bookstore/bookstore/web/BookstoreController.java
+/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Bookstore2/src/main/java/bookstore/bookstore/BookstoreApplication.java
+/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Bookstore2/src/main/java/bookstore/bookstore/WebSecurityConfig.java
+/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Bookstore2/src/main/java/bookstore/bookstore/model/AppUser.java
+/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Bookstore2/src/main/java/bookstore/bookstore/model/AppUserRepository.java
+/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Bookstore2/src/main/java/bookstore/bookstore/model/Book.java
+/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Bookstore2/src/main/java/bookstore/bookstore/model/BookRepository.java
+/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Bookstore2/src/main/java/bookstore/bookstore/model/Category.java
+/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Bookstore2/src/main/java/bookstore/bookstore/model/CategoryRepository.java
+/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Bookstore2/src/main/java/bookstore/bookstore/web/BookstoreController.java
+/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Bookstore2/src/main/java/bookstore/bookstore/web/BookstoreRestController.java
+/Users/anttivaris/Desktop/Opiskelu/Kevät 2025 - 1/Bookstore2/src/main/java/bookstore/bookstore/web/UserDetailServiceImpl.java
