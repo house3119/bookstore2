@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+  <head>
+    <title>Bookstore</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" th:href="@{../css/bootstrap.min.css}" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light bg-light" style="border-bottom: 1px solid rgb(235, 235, 235);">
+      <a class="navbar-brand px-2" href="/booklist">📖 Bookstore</a>
+      <span style="margin-left: auto; margin-right: 25px;">Signed in as <b><span sec:authentication="name"></span></span></b>
+      <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out" class="btn btn-sm btn-danger me-2"/>
+      </form>
+    </nav>
+
+    <div class="container">
+      <div style="margin: auto; width: 100%;" class="my-4">
+        <h2>Edit book</h2>
+        <form action="#" th:action="@{/savebook/{id}(id=${book.id})}" th:object="${book}" method="post">
+          <div class="form-group" style="margin-bottom: 5px;">
+            <label for="" style="display: inline-block; width: 70px;">
+              Book ID
+            </label>
+            <input class="form-control" type="text" id="" th:field="*{id}" disabled>
+          </div>
+  
+          <div class="form-group" style="margin-bottom: 5px;">
+            <label for="" style="display: inline-block; width: 70px;">
+              Title
+            </label>
+            <input class="form-control" type="text" id="" th:field="*{title}">
+          </div>
+          <div class="text-danger" th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Error</div>
+  
+          <div class="form-group" style="margin-bottom: 5px;">
+            <label for="" style="display: inline-block; width: 70px;">
+              Author
+            </label>
+            <input class="form-control" type="text" id="" th:field="*{author}">
+          </div>
+          <div class="text-danger" th:if="${#fields.hasErrors('author')}" th:errors="*{author}">Error</div>
+  
+          <div class="form-group" style="margin-bottom: 5px;">
+            <label for="" style="display: inline-block; width: 70px;">
+              Pub. Year
+            </label>
+            <input class="form-control" type="text" id="" th:field="*{publicationYear}">
+          </div>
+          <div class="text-danger" th:if="${#fields.hasErrors('publicationYear')}" th:errors="*{publicationYear}">Error</div>
+  
+          <div class="form-group" style="margin-bottom: 5px;">
+            <label for="" style="display: inline-block; width: 70px;">
+              ISBN
+            </label>
+            <input class="form-control" type="text" id="" th:field="*{isbn}">
+          </div>
+          <div class="text-danger" th:if="${#fields.hasErrors('isbn')}" th:errors="*{isbn}">Error</div>
+  
+          <div class="form-group" style="margin-bottom: 5px;">
+            <label for="" style="display: inline-block; width: 70px;">
+              Category
+            </label>
+            <select class="form-select" th:field="*{category}">
+              <option th:each="category: ${categories}"
+                      th:value="${category.categoryid}"
+                      th:text="${category.name}">
+              </option>
+            </select>
+          </div>
+  
+          <div class="form-group" style="margin-bottom: 10px;">
+            <label for="" style="display: inline-block; width: 70px;">
+              Price
+            </label>
+            <input class="form-control" type="number" min="0" step=".01" id="" th:field="*{price}">
+          </div>
+          <div class="text-danger" th:if="${#fields.hasErrors('price')}" th:errors="*{price}">Error</div>
+  
+          <input class="btn btn-primary" type="submit" value="Save">
+          <a class="btn btn-outline-secondary" href="/booklist">Cancel</a>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>
