@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: bookstore.bookstore.CategoryRepositoryTests
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.986 s -- in bookstore.bookstore.CategoryRepositoryTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.941 s -- in bookstore.bookstore.CategoryRepositoryTests
